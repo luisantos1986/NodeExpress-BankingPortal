@@ -5,6 +5,16 @@
     <a href="/profile">Profile</a>
 </div>
 
+<div>
+   <%= accounts.checking.unique_name %>
+</div>
+
+<ul>
+<% for (let i = 0; i < accounts.savings.length; i++) { %>
+    <li><%= i %></li>
+    
+<%} %>
+</ul>
 <br><a href="/transfer">Transfer</a>
 
 
