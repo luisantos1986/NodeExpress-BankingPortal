@@ -5,9 +5,10 @@
     <a href="/profile">Profile</a>
 </div>
 
-<div>
-   <%= accounts.checking.unique_name %>
-</div>
+<%- include('summary', {account: accounts.savings}) %>
+<%- include('summary', {account: accounts.checking}) %>
+<%- include('summary', {account: accounts.credit}) %>
+
 
 <ul>
 <% for (let i = 0; i < accounts.savings.length; i++) { %>
